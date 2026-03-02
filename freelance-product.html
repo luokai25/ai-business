@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelance Success Package | Get Your First Client Fast</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .bg-pattern { background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%); }
+    </style>
+</head>
+<body class="bg-pattern min-h-screen text-white">
+    <div class="container mx-auto px-6 py-16 max-w-4xl">
+        <div class="text-center mb-12">
+            <span class="bg-yellow-400 text-yellow-900 font-bold px-4 py-1 rounded-full text-sm">DIGITAL PRODUCT</span>
+            <h1 class="text-5xl font-bold mt-6 mb-4">Freelance Success Package</h1>
+            <p class="text-xl text-indigo-200">Land your first client in 7 days — or less</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="bg-white/10 p-8 rounded-2xl">
+                <h3 class="text-2xl font-bold mb-4">What's Inside</h3>
+                <ul class="space-y-3">
+                    <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Upwork & Fiverr Profile Templates</li>
+                    <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> 10 Winning Proposal Templates</li>
+                    <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Client Outreach Scripts</li>
+                    <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Pricing Calculator</li>
+                    <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Contract Templates</li>
+                    <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Client Interview Questions</li>
+                    <li class="flex items-center"><span class="text-green-400 mr-2">✓</span> Quick Start Checklist</li>
+                </ul>
+            </div>
+            <div class="bg-gradient-to-br from-purple-600 to-pink-600 p-8 rounded-2xl">
+                <h3 class="text-2xl font-bold mb-4">Why This Works</h3>
+                <ul class="space-y-3">
+                    <li>✓ Proven templates that convert</li>
+                    <li>✓ Copy-paste ready</li>
+                    <li>✓ Works for any skill</li>
+                    <li>✓ Instant download</li>
+                </ul>
+                <div class="mt-8 text-center">
+                    <div class="text-4xl font-bold">$27</div>
+                    <div class="text-purple-200">One-time payment</div>
+                    <button id="buyBtn" class="mt-4 bg-white text-purple-600 font-bold px-8 py-3 rounded-full hover:bg-gray-100 transition">
+                        Buy Now
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white/5 p-8 rounded-2xl mb-12">
+            <h3 class="text-2xl font-bold mb-4">What People Say</h3>
+            <div class="italic text-indigo-200">"Got my first client within 3 days using these templates. The proposal template is gold!" — Sarah</div>
+        </div>
+
+        <div class="text-center">
+            <p class="text-indigo-300 mb-4">30-day money-back guarantee</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('buyBtn').addEventListener('click', function() {
+            const orders = JSON.parse(localStorage.getItem('orders') || '[]');
+            alert('Thanks! This is a demo. In production, this would connect to Stripe.');
+        });
+    </script>
+</body>
+</html>

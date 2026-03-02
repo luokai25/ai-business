@@ -1,0 +1,33 @@
+{
+  "name": "AI Business Tracker",
+  "databases": {
+    "leads": {
+      "properties": {
+        "name": {"type": "title"},
+        "email": {"type": "email"},
+        "status": {"type": "select", "options": ["New", "Contacted", "Qualified", "Proposal", "Won", "Lost"]},
+        "source": {"type": "select", "options": ["Website", "Social", "Referral", "Cold Outreach"]},
+        "value": {"type": "number"},
+        "created": {"type": "date"}
+      }
+    },
+    "clients": {
+      "properties": {
+        "name": {"type": "title"},
+        "email": {"type": "email"},
+        "plan": {"type": "select", "options": ["Starter", "Growth", "Enterprise"]},
+        "MRR": {"type": "number"},
+        "status": {"type": "select", "options": ["Active", "Paused", "Churned"]},
+        "startDate": {"type": "date"}
+      }
+    },
+    "tasks": {
+      "properties": {
+        "title": {"type": "title"},
+        "status": {"type": "select", "options": ["Todo", "In Progress", "Done"]},
+        "priority": {"type": "select", "options": ["Low", "Medium", "High"]},
+        "due": {"type": "date"}
+      }
+    }
+  }
+}
